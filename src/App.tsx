@@ -7,6 +7,16 @@ import { ProductDetailPage } from './pages/ProductDetailPage';
 import { ClaimPage } from './pages/ClaimPage';
 import { SuccessPage } from './pages/SuccessPage';
 import { ProfilePage } from './pages/ProfilePage';
+import { AboutPage } from './pages/AboutPage';
+import { SignUpPage } from './pages/SignUpPage';
+import { SignInPage } from './pages/SignInPage';
+import { CategoriesPage } from './pages/CategoriesPage';
+import { WishlistPage } from './pages/WishlistPage';
+import { ClaimedPage } from './pages/ClaimedPage';
+import { HelpCenterPage } from './pages/HelpCenterPage';
+import { TermsPage } from './pages/TermsPage';
+import { PrivacyPage } from './pages/PrivacyPage';
+import { SettingsPage } from './pages/SettingsPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -30,6 +40,28 @@ function App() {
         return <SuccessPage onNavigate={handleNavigate} />;
       case 'profile':
         return <ProfilePage onNavigate={handleNavigate} />;
+      case 'about':
+        return <AboutPage onNavigate={handleNavigate} />;
+      case 'register':
+      case 'signup':
+        return <SignUpPage onNavigate={handleNavigate} />;
+      case 'signin':
+      case 'login':
+        return <SignInPage onNavigate={handleNavigate} />;
+      case 'categories':
+        return <CategoriesPage onNavigate={handleNavigate} />;
+      case 'wishlist':
+        return <WishlistPage onNavigate={handleNavigate} />;
+      case 'claimed':
+        return <ClaimedPage onNavigate={handleNavigate} />;
+      case 'help':
+        return <HelpCenterPage onNavigate={handleNavigate} />;
+      case 'terms':
+        return <TermsPage onNavigate={handleNavigate} />;
+      case 'privacy':
+        return <PrivacyPage onNavigate={handleNavigate} />;
+      case 'settings':
+        return <SettingsPage onNavigate={handleNavigate} />;
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }
