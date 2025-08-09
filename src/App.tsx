@@ -73,7 +73,7 @@ function App() {
       <main>
         {renderPage()}
       </main>
-      <Footer />
+      <Footer onNavigate={handleNavigate} />
     </div>
   );
 }

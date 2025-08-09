@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, Mail, Phone, MapPin, Settings, Heart, Package, Star, Edit3 } from 'lucide-react';
+import { User, Mail, Phone, MapPin, Settings, Heart, Package, Star } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Card, CardContent } from '../components/ui/card';
